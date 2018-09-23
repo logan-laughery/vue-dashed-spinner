@@ -1,4 +1,4 @@
-# dashed-spinner
+# vue-dashed-spinner
 
 ## Project setup
 ```

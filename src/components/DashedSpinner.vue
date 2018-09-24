@@ -1,11 +1,16 @@
 <template>
-  <div class="dashed-spinner" :style="{ height: this.size + 'em', width: this.size + 'em' }">
-    <div
-      v-for="(arc, index) in arcs"
-      :key="index"
-      :style="{ transform: arc.style.transform, animation: arc.style.animation }"
-      class='arc'
-    />
+  <div class="dashed-spinner-container">
+    <div class="dashed-spinner">
+      <div class="centered-content">
+        <slot/>
+      </div>
+      <div
+        v-for="(arc, index) in arcs"
+        :key="index"
+        :style="{ transform: arc.style.transform, animation: arc.style.animation }"
+        class='arc'
+      />
+    </div>
   </div>
 </template>
 
@@ -48,18 +53,33 @@ export default {
 </script>
 
 <style>
+.dashed-spinner-container {
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 .dashed-spinner {
+  display: flex;
 	position: relative;
-	margin: 7em auto;
 	border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.centered-content {
+  padding: 0;
 }
 .arc {
 	overflow: hidden;
 	position: absolute;
-	top: -.5em;
+	top: 0;
   right: 50%;
   bottom: 50%;
-  left: -.5em;
+  left: 0;
 	transform-origin: 100% 100%;
 	transform: rotate(105deg) skewX(70deg);
   visibility: hidden;

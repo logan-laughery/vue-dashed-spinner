@@ -4,7 +4,9 @@
     <h3>
       Dashed Spinner
     </h3>
-    <DashedSpinner/>
+    <DashedSpinner>
+      Loading
+    </DashedSpinner>
   </div>
 </template>
 

@@ -12,7 +12,7 @@ Add to vue application (in main.js):
 import '@stout/vue-dashed-spinner';
 ```
 
-## Useage
+## Usage
 ```
 <DashedSpinner/>
 ```

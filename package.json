@@ -1,6 +1,6 @@
 {
   "name": "@stout/vue-dashed-spinner",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -48,5 +48,5 @@
     "*.json",
     "*.js"
   ],
-  "main": "./dist/dashed-spinner.common.js"
+  "main": "./dist/dashed-spinner.umd.js"
 }

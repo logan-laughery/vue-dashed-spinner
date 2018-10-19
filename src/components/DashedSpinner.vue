@@ -43,7 +43,7 @@ export default {
           return {
             style: {
               transform: `rotate(${location}deg) skewX(70deg)`,
-              animation: `show ${this.duration}s steps(1,end) infinite ${delay}s`,
+              animation: `spinshow ${this.duration}s steps(1,end) infinite ${delay}s`,
             }
           };
         });
@@ -93,7 +93,7 @@ export default {
 	transform: skewX(-70deg);
 	content: '';
 }
-@keyframes show {
+@keyframes spinshow {
     0% {visibility: visible;}
     25% {visibility: hidden;}
     50% {visibility: visible;}

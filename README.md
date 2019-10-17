@@ -1,5 +1,5 @@
 # vue-dashed-spinner
-![spinner](https://media.giphy.com/media/bbw0H4uie1Gu9kvdKM/giphy.gif)
+![spinner](https://raw.githubusercontent.com/logan-laughery/vue-dashed-spinner/master/docs/spinner.gif)
 
 ## Install / Setup
 Install with npm:
